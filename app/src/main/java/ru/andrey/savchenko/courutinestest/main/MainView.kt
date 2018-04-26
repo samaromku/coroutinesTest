@@ -1,12 +1,10 @@
 package ru.andrey.savchenko.courutinestest.main
 
-import com.arellomobile.mvp.MvpView
 import ru.andrey.savchenko.courutinestest.User
+import ru.andrey.savchenko.courutinestest.base.BaseView
 
 
-interface MainView:MvpView {
-    fun showDialog()
-    fun hideDialog()
-    fun showError(text:String)
+interface MainView:BaseView {
+
     fun showResult(list:List<User>)
 }
